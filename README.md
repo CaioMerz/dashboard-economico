@@ -1,29 +1,34 @@
-# Dashboard Econômico
-> Portfólio de análise de dados financeiros | Python · Streamlit · SQL
+﻿# Dashboard EconÃ´mico
+> PortfÃ³lio de anÃ¡lise de dados financeiros | Python Â· Streamlit Â· SQL
 
-Este projeto organiza, em um único dashboard, três frentes que costumam ser analisadas separadamente: **macroeconomia, crédito e investimentos**.
+## 🔗 Acesse o Dashboard
 
-Na prática, ele resolve um problema simples: transformar dados financeiros de fontes diferentes em uma leitura clara, comparável e fácil de apresentar, sem perder cuidado metodológico.
+[Visualizar aplicação online](https://caio-dashboard-economico.streamlit.app)
 
-## Motivação
 
-Eu criei este dashboard para reunir em um só lugar análises que já fazia em projetos separados.
+Este projeto organiza, em um Ãºnico dashboard, trÃªs frentes que costumam ser analisadas separadamente: **macroeconomia, crÃ©dito e investimentos**.
 
-A ideia foi construir um projeto de portfólio que mostrasse, de forma objetiva:
-- leitura de cenário com IPCA e Selic;
-- segmentação de risco de crédito com score explicável;
-- comparação de performance de carteira buy and hold contra benchmarks.
+Na prÃ¡tica, ele resolve um problema simples: transformar dados financeiros de fontes diferentes em uma leitura clara, comparÃ¡vel e fÃ¡cil de apresentar, sem perder cuidado metodolÃ³gico.
+
+## MotivaÃ§Ã£o
+
+Eu criei este dashboard para reunir em um sÃ³ lugar anÃ¡lises que jÃ¡ fazia em projetos separados.
+
+A ideia foi construir um projeto de portfÃ³lio que mostrasse, de forma objetiva:
+- leitura de cenÃ¡rio com IPCA e Selic;
+- segmentaÃ§Ã£o de risco de crÃ©dito com score explicÃ¡vel;
+- comparaÃ§Ã£o de performance de carteira buy and hold contra benchmarks.
 
 ## Tecnologias usadas
 
 - **Python**
-- **Streamlit** (aplicação web e navegação multipágina)
+- **Streamlit** (aplicaÃ§Ã£o web e navegaÃ§Ã£o multipÃ¡gina)
 - **Pandas** (tratamento e modelagem tabular)
-- **Matplotlib** (gráficos analíticos)
-- **Plotly** (uso complementar em visualizações)
-- **SQLite** (persistência local para macroeconomia e crédito)
+- **Matplotlib** (grÃ¡ficos analÃ­ticos)
+- **Plotly** (uso complementar em visualizaÃ§Ãµes)
+- **SQLite** (persistÃªncia local para macroeconomia e crÃ©dito)
 
-Dependências principais (arquivo `requirements.txt`):
+DependÃªncias principais (arquivo `requirements.txt`):
 - `streamlit>=1.36,<2.0`
 - `pandas>=2.2,<3.0`
 - `matplotlib>=3.8,<4.0`
@@ -45,7 +50,7 @@ python -m venv .venv
 .venv\Scripts\Activate.ps1
 ```
 
-4. Instale as dependências:
+4. Instale as dependÃªncias:
 
 ```powershell
 pip install -r requirements.txt
@@ -88,32 +93,32 @@ dashboard-economico/
 ## O que o dashboard entrega
 
 ### 1) Macroeconomia
-- Série histórica de **IPCA e Selic** (2015-2024).
-- Gráfico de **IPCA acumulado em 12 meses** com linha de referência visual de 3,0%.
-- Resumo lateral com leitura descritiva e cautela metodológica (sem inferência causal forte).
+- SÃ©rie histÃ³rica de **IPCA e Selic** (2015-2024).
+- GrÃ¡fico de **IPCA acumulado em 12 meses** com linha de referÃªncia visual de 3,0%.
+- Resumo lateral com leitura descritiva e cautela metodolÃ³gica (sem inferÃªncia causal forte).
 
-### 2) Crédito
-- Inadimplência média por faixa de risco (baixo, médio e alto risco).
-- Distribuição real do score na base.
-- Destaque para diferença de inadimplência entre extremos de risco.
+### 2) CrÃ©dito
+- InadimplÃªncia mÃ©dia por faixa de risco (baixo, mÃ©dio e alto risco).
+- DistribuiÃ§Ã£o real do score na base.
+- Destaque para diferenÃ§a de inadimplÃªncia entre extremos de risco.
 
 ### 3) Investimentos
-- Evolução histórica de carteira hipotética versus **IBOV** e **CDI (proxy)**.
-- Retorno anual com indicação de ano corrente parcial (YTD).
-- Métricas de risco e retorno: drawdown, volatilidade e relação retorno/volatilidade (`rf=0`).
+- EvoluÃ§Ã£o histÃ³rica de carteira hipotÃ©tica versus **IBOV** e **CDI (proxy)**.
+- Retorno anual com indicaÃ§Ã£o de ano corrente parcial (YTD).
+- MÃ©tricas de risco e retorno: drawdown, volatilidade e relaÃ§Ã£o retorno/volatilidade (`rf=0`).
 
 ### 4) Sobre
-- Contexto profissional, certificações (CPA-10 e CPA-20), stack técnica e links.
-- Bloco de experiência com resultados quantitativos para portfólio.
+- Contexto profissional, certificaÃ§Ãµes (CPA-10 e CPA-20), stack tÃ©cnica e links.
+- Bloco de experiÃªncia com resultados quantitativos para portfÃ³lio.
 
-## Principais conclusões analíticas
+## Principais conclusÃµes analÃ­ticas
 
-- IPCA e Selic apresentam associação com defasagem temporal visível na série 2015-2024.
-- Inadimplência é significativamente maior nas faixas de alto risco; a segmentação por score evidencia forte heterogeneidade.
-- Carteira hipotética supera IBOV e CDI no período analisado, com análise complementar por volatilidade e drawdown.
+- IPCA e Selic apresentam associaÃ§Ã£o com defasagem temporal visÃ­vel na sÃ©rie 2015-2024.
+- InadimplÃªncia Ã© significativamente maior nas faixas de alto risco; a segmentaÃ§Ã£o por score evidencia forte heterogeneidade.
+- Carteira hipotÃ©tica supera IBOV e CDI no perÃ­odo analisado, com anÃ¡lise complementar por volatilidade e drawdown.
 
 ## Fontes de dados
 
-- **Banco Central (SGS)**: séries macroeconômicas (IPCA e Selic).
-- **Give Me Some Credit (Kaggle)**: base para análise de risco de crédito.
-- **Séries tratadas no pipeline do projeto**: carteira hipotética buy and hold e benchmarks (IBOV e CDI proxy) usados nas comparações.
+- **Banco Central (SGS)**: sÃ©ries macroeconÃ´micas (IPCA e Selic).
+- **Give Me Some Credit (Kaggle)**: base para anÃ¡lise de risco de crÃ©dito.
+- **SÃ©ries tratadas no pipeline do projeto**: carteira hipotÃ©tica buy and hold e benchmarks (IBOV e CDI proxy) usados nas comparaÃ§Ãµes.

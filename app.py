@@ -1049,7 +1049,7 @@ def pagina_inicio() -> None:
         data_base=f"até {data_base_invest}",
     )
 
-    st.markdown("### Frentes de análise")
+    st.markdown("### Frentes de Análise")
     st.markdown(
         "<p style='font-size:0.85rem; color:#6b7280; margin:-0.5rem 0 0.8rem 0; line-height:1.5;'>O cenário macro define o custo do dinheiro, o crédito mede o risco de quem toma, e a carteira mostra o retorno de quem investe.</p>",
         unsafe_allow_html=True,
