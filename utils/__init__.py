@@ -1,0 +1,2 @@
+"""Funcoes utilitarias do projeto."""
+
